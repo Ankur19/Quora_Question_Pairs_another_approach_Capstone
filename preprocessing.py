@@ -60,7 +60,7 @@ df['question2']  = sents
 with open ('question_pair.pickle', 'wb') as f:
     pickle.dump(df, f)
 
-#
+# Use tokenizer to make our word_index
 tk = text.Tokenizer(num_words=200000)
 # we use keras Tokenizer to tokenizer the data. 
 # we will only consider top 200000 words that occur in the dataset
@@ -92,5 +92,5 @@ for word, i in tqdm(word_index.items()):
 
 
 
-# sav3 the weight matrix for reuse
+# save the weight matrix for reuse
 np.savetxt('embeddings.txt',embedding_matrix)
