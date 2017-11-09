@@ -24,6 +24,6 @@ Python packages Required to run the Notebooks:
 
 ## Steps
 
-* Run Preprocess.py to create the **question_pair.pickle** file and **embeddings.txt** file
+* Run Preprocess.py on the root folder containing the dataset and the embedding, to create the **question_pair.pickle** file and **embeddings.txt** file
 * Final Model notebook can be run now to replicate the results.
 * Base Models Notebook is a standalone Notebook and doesnot require running preprocess.py first. Though it is to be noted that if preprocessing.py has already been run before then only import of **question_pair.pickle** file and **embeddings.txt** file is required in this notebook.
